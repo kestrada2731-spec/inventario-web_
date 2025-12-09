@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventario de Equipos Informáticos Aduanas Archivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inventario de Equipos Informáticos - Aduana Archivo</h1>
+
+    <form id="inventoryForm">
+      <input type="text" id="modelo" placeholder="Modelo del equipo" required />
+      <input type="number" id="cantidad" placeholder="Cantidad" required />
+      <select id="estado" required>
+        <option value="">Estado del dispositivo</option>
+        <option value="Nuevo">Nuevo</option>
+        <option value="Usado - Buen estado">Usado - Buen estado</option>
+        <option value="Usado - Regular">Usado - Regular</option>
+        <option value="Dañado">Dañado</option>
+      </select>
+      <button type="submit">Agregar al Inventario</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Cantidad</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="inventoryTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
